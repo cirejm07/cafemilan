@@ -1,0 +1,197 @@
+/* 
+-- Font used in this page --
+font-family: 'Roboto', sans-serif;
+font-family: 'Sue Ellen Francisco', cursive; 
+*/
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* anchor tag reset */
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    cursor: context-menu;
+}
+
+/* navbar background color */
+.navbar {
+    background-color: rgba(13.73, 12.165, 12.55, 0.8) !important;
+    font-family: 'Sue Ellen Francisco', cursive; 
+}
+
+.navbar img{
+    height: 70px;
+    width: 100%;
+}
+
+
+/* for js #hamburger1 onclick function */
+.hide {
+    visibility: hidden;
+    z-index: -9999;
+}
+
+.show {
+    display: block !important;
+    z-index: 9999;
+}
+
+
+
+button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+#hamburger1{
+    position: relative;
+}
+
+#hamburger2{
+    z-index: 1;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 20%);
+}
+
+/* X */
+#close {
+    position: relative;
+   display: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li{
+    position:relative;
+}
+
+
+ul li::before{
+    content: " ";
+    background-image: url(../img/coffee-animation.gif);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 4rem;
+    height: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, -15%);
+}
+
+ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+    transition: width ease-out 200ms;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+
+/* remove the coffee gif when the with is <= 991px */
+@media only screen and (max-width: 991px) {
+    ul li::before{
+        display: none;
+    }
+  }
+
+#hero-section{
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-repeat:repeat-x;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: -1rem;
+}
+
+/* added opacity to the hero section */
+#hero-section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* cafe-milan logo */
+#hero-logo img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 999;
+    width: 15rem;
+}
+
+/* Passion in a cup */
+#hero-section #hero-intro{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    font-family: 'Sue Ellen Francisco', cursive; 
+    width: 100%;
+    text-align: center;
+}
+
+#hero-section #cup-gif{
+    position: absolute;
+    bottom: 100%;
+    left: 49.5%;
+    transform: translate(-50%, 45%);
+    width: 250px;
+    z-index: -1;
+}
+
+
+#hero-section #hero-menu a{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    transition: ease-out 0.5s;
+}
+
+#hero-section #hero-menu a:hover{
+    background-color: rgba(255, 255, 255, 0.975);
+    color: black !important;
+    
+}
