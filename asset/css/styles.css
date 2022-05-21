@@ -17,6 +17,18 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    opacity: 0.9;
+    transition: ease-in-out 300ms;
+    color: #ffc107 !important;
+}
+
+.fa-brands:hover {
+    opacity: 0.9;
+    transition: ease-in-out 300ms;
+    color: #ffc107 !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,6 +36,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     cursor: context-menu;
+    background-color:rgb(11,11,10);
 }
 
 /* navbar background color */
@@ -51,7 +64,8 @@ body {
 
 
 
-button{
+
+nav button{
     position: relative;
     width: 50px;
     height: 50px;
@@ -80,12 +94,12 @@ button{
     font-family: 'Roboto', sans-serif;
 }
 
-ul li{
+#nav-lists li{
     position:relative;
 }
 
 
-ul li::before{
+#nav-lists li::before{
     content: " ";
     background-image: url(../img/coffee-animation.gif);
     background-position: center;
@@ -100,7 +114,7 @@ ul li::before{
     transform: translate(-100%, -15%);
 }
 
-ul li::after{
+#nav-lists li::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -111,7 +125,7 @@ ul li::after{
     transition: width ease-out 200ms;
 }
 
-ul li:hover::after{
+#nav-lists li:hover::after{
     width: 100%;
 }
 
@@ -148,7 +162,7 @@ ul li:hover::after{
 /* cafe-milan logo */
 #hero-logo img {
     position: absolute;
-    top: 0%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 999;
@@ -194,4 +208,90 @@ ul li:hover::after{
     background-color: rgba(255, 255, 255, 0.975);
     color: black !important;
     
+}
+
+#cafe-milan {
+    position: relative;
+}
+
+#cafe-milan::before {
+    content: " ";
+    background-image: url(../img/coffee-machine.gif);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    left: 0;
+    bottom: 25%;
+}
+
+#cafe-milan::after {
+    content: " ";
+    background-image: url(../img/coffee-machine.gif);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    right: 0;
+    bottom: 25%;
+}
+
+
+
+/* owl-carousel slider */
+
+ .owl-item{
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .owl-item::before{
+content: "";
+position: absolute !important;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+#opening-hours {
+    height: 525px;
+    position: relative;
+   background-image: url(/asset/img/243475528_874486879920775_1727775237549670683_n.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 0 auto;
+}
+
+#opening-hours::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#schedules {
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    z-index: 6666;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center !important;
 }

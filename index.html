@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Cafe Milan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +17,24 @@
       crossorigin="anonymous"
     />
     <link rel="icon" href="./asset/img/cafe-milan-logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/c78afc380b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="asset/css/styles.css" />
   </head>
   <body>
@@ -42,10 +60,31 @@
           <div class="text-secondary fw-bolder" id="close">X</div>
         </button>
         <div
-          class="collapse navbar-collapse text-center mt-5"
+          class="collapse navbar-collapse text-center"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-0 gap-lg-5">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-0">
+            <li class="nav-item d-inline">
+              <a href="https://www.facebook.com/cafemilan.bcd" target="_blank"
+                ><i class="fa-brands fa-facebook-square fs-2 text-light p-1"></i
+              ></a>
+              <a href="https://www.instagram.com/cafemilan.bcd/" target="_blank"
+                ><i
+                  class="fa-brands fa-instagram-square fs-2 text-light px-1"
+                ></i
+              ></a>
+              <div>
+                <i class="fa-solid fa-phone fs-5 text-light"></i>
+                <a href="tel:09957768890" class="fs-5 text-light"
+                  >0995 776 8890</a
+                >
+              </div>
+            </li>
+          </ul>
+          <ul
+            id="nav-lists"
+            class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-0 gap-lg-5"
+          >
             <li class="nav-item">
               <a
                 class="nav-link active text-light fs-5 text-uppercase"
@@ -87,13 +126,108 @@
         <a class="text-light text-uppercase" href="">see our menu</a>
       </p>
     </div>
-
+    <div class="container">
+      <p id="cafe-milan" class="fs-2 fw-bold text-center py-5 text-light">
+        Cafe Milan
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div
+            class="owl-carousel owl-theme border border-2 border-light rounded-1 order-2 order-md-1"
+          >
+            <div class="item img-fluid">
+              <img src="./asset/img/loc.jpg" alt="" />
+            </div>
+            <div class="item img-fluid">
+              <img src="./asset/img/12.jpg" alt="" />
+            </div>
+            <div class="item img-fluid">
+              <img src="./asset/img/13.jpg" alt="" />
+            </div>
+            <div class="item img-fluid">
+              <img src="./asset/img/15.jpg" alt="" />
+            </div>
+            <div class="item img-fluid">
+              <img src="./asset/img/9.jpg" alt="" />
+            </div>
+            <div class="item img-fluid">
+              <img src="./asset/img/10.jpg" alt="" />
+            </div>
+          </div>
+          <div class="order-1 order-md-2">
+            <p class="fs-5 fw-bold opacity-1 text-light">
+              Coffee, family and friends make the perfect blend.
+            </p>
+            <p class="text-light">
+              Blend one of the best moments of your life with your family and
+              friends @<a
+                class="text-info"
+                href="https://www.google.com/maps/dir/10.665415,123.0000943/cafe+milan+bacolod/@10.6783415,122.9438858,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33aed1aa96a7c4db:0x2aa18adf765e485a!2m2!1d122.977484!2d10.692907"
+                target="_blank"
+                >Cafe Milan <i class="fa-solid fa-map-location-dot"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          id="opening-hours"
+          class="col-12 col-md-8 border border-2 border-light rounded-1"
+        >
+          <div
+            id="schedules"
+            class="text-light d-md-flex justify-content-around"
+          >
+            <div class="text-center p-1">
+              <p class="text-warning fw-bold fs-5">Delivery</p>
+              <a href="tel:09957768890" class="text-light">0995 776 8890</a>
+              <p class="w-75 m-auto">Also available through Grab Food.</p>
+            </div>
+            <div class="text-center p-1">
+              <p class="text-warning fw-bold fs-5">Open Every Day</p>
+              <p>8:00AM - 9:00PM</p>
+            </div>
+            <div class="text-center p-1">
+              <p class="text-warning fw-bold fs-5">Email</p>
+              <p>
+                <a href="mailto:cafemilanbcd@gmail.com" class="text-light"
+                  >cafemilanbcd@gmail.com</a
+                >
+              </p>
+              <p class="text-light my-2">or</p>
+              <p>
+                <a id="send-us-a-message" class="btn text-light" href=""
+                  >Send us a message <i class="fa-solid fa-message"></i
+                ></a>
+              </p>
+            </div>
+            <div class="text-center p-1">
+              <p class="text-warning fw-bold fs-5">Stay Connected</p>
+              <p>
+                <a href="https://www.facebook.com/cafemilan.bcd" target="_blank"
+                  ><i
+                    class="fa-brands fa-facebook-square fs-1 text-light px-2"
+                  ></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/cafemilan.bcd/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram-square fs-1 text-light"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./asset/js/index.js"></script>
   </body>
 </html>
