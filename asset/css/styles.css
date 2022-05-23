@@ -302,7 +302,7 @@ background-color: rgba(0, 0, 0, 0.4);
 #opening-hours {
     height: 525px;
     position: relative;
-   background-image: url(/asset/img/info-bg2.jpg);
+   background-image: url(../img/info-bg2.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -400,7 +400,7 @@ a[href="https://elfsight.com/all-in-one-chat-widget/?utm_source=websites&utm_med
     height: 100%;
     left: 0;
     top: 0;
-    background-image: url(/asset/img/cafe-milan-loc.png);
+    background-image: url(../img/cafe-milan-loc.png);
     background-position: 50% 45%;
     background-repeat: no-repeat;
     background-size: cover;
