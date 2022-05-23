@@ -4,6 +4,9 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Sue Ellen Francisco', cursive; 
 */
 
+:root {
+    font-size: 18px;
+}
 
 /* CSS Reset */
 * {
@@ -11,6 +14,8 @@ font-family: 'Sue Ellen Francisco', cursive;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 /* anchor tag reset */
 a {
@@ -43,6 +48,7 @@ body {
 .navbar {
     background-color: rgba(13.73, 12.165, 12.55, 0.8) !important;
     font-family: 'Sue Ellen Francisco', cursive; 
+    z-index: 99999999 !important;
 }
 
 .navbar img{
@@ -69,6 +75,7 @@ nav button{
     position: relative;
     width: 50px;
     height: 50px;
+    margin-right: 2rem;
 }
 
 #hamburger1{
@@ -242,6 +249,36 @@ nav button{
     bottom: 25%;
 }
 
+@media only screen and (max-width: 350px) {
+    #cafe-milan::before {
+        content: " ";
+        background-image: url(../img/coffee-machine.gif);
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+        position:absolute;
+        left: -10%;
+        bottom: 25%;
+    }
+    
+    #cafe-milan::after {
+        content: " ";
+        background-image: url(../img/coffee-machine.gif);
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+        position:absolute;
+        right: -10%;
+        bottom: 25%;
+    }
+  }
+
 
 
 /* owl-carousel slider */
@@ -267,7 +304,7 @@ background-color: rgba(0, 0, 0, 0.4);
 #opening-hours {
     height: 525px;
     position: relative;
-   background-image: url(/asset/img/243475528_874486879920775_1727775237549670683_n.jpg);
+   background-image: url(/asset/img/info-bg2.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -294,4 +331,54 @@ background-color: rgba(0, 0, 0, 0.4);
     transform: translate(-50%,-50%);
     width: 100%;
     text-align: center !important;
+}
+
+
+
+#index-about {
+    position: relative;
+}
+
+#index-about::before {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 50px;
+    width: 2px;
+    background-color: #fff;
+}
+
+#index-about::after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 50px;
+    width: 2px;
+    background-color: #fff;
+}
+
+#index-about img{
+    width: 350px;
+}
+
+
+#get-to-Know {
+    z-index: 999999999999 !important;
+}
+
+.index-about-us{
+    width: 500px;
+}
+
+ a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=127.0.0.1:5500&utm_campaign=free-widget"]{
+    display: none !important;
+}
+
+
+a[href="https://elfsight.com/all-in-one-chat-widget/?utm_source=websites&utm_medium=clients&utm_content=all-in-one-chat&utm_term=127.0.0.1:5500&utm_campaign=free-widget"] {
+    display: none !important;
 }
