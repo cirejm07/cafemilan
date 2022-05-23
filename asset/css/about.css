@@ -161,17 +161,17 @@ nav button{
     background-position: 50% 70%;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
+    z-index: -2;
     opacity: 0.5;
     
 }
 
 
 #about-info-header-bg #about-us-title{
-    position:fixed;
-    z-index: 1;
+    position:absolute;
+    z-index: -1;
     left: 50%;
-    top: 25%;
+    top: 40%;
     transform: translate(-50%, 0%);
 }
 
@@ -181,9 +181,8 @@ nav button{
     left: 0;
     bottom: -70%;
     transform: translate(0%,0%);
-    z-index: 5 !important;
+    z-index: 1;
     background-color:rgb(11,11,10);
-    
 }
 
 #about-section p{
@@ -192,13 +191,10 @@ nav button{
 }
 
 
-
-
 #footer {
     margin-top: 10rem;
     background-color: rgba(0, 0, 0, 0.7);
     position: relative;
-    z-index: 1;
     overflow: hidden;
     padding: 10rem 0 !important;
 }
