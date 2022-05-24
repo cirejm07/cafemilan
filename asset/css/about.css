@@ -172,7 +172,7 @@ nav button{
     position:absolute;
     z-index: -1;
     left: 50%;
-    top: 40%;
+    top: 30%;
     transform: translate(-50%, 0%);
 }
 
