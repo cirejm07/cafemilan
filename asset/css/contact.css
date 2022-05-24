@@ -38,7 +38,6 @@ body {
     font-family: 'Roboto', sans-serif;
     cursor: context-menu;
     background-color:rgb(11,11,10);
-
 }
 
 /* navbar background color */
@@ -141,130 +140,78 @@ nav button{
   }
 
 
+  #form{
+      width: 100vw;
+      height: 100;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+  }
 
 
 
-#about-info-header-bg{
-    position:relative;
-    z-index: -1;
+#name-container,
+#email-container {
+    position: relative;
+    height: 70px;
+    background-color: transparent;
+    border: none;
 }
 
-
-#about-info-header-bg::before{
-    content: "hey";
+#name,
+#email {
+    background-color: transparent;
     position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 25px;
+    color: #fff;
+    outline: none;
+    transition: width 300ms ease-in-out;
+}
+
+#name:focus, #name:not(:placeholder-shown),
+#email:focus, #email:not(:placeholder-shown)  {
     width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    background-attachment: fixed;
-    background-image: url(../img/info-bg.jpg);
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2;
-    opacity: 0.5;
 }
 
-
-#about-info-header-bg #about-us-title{
-    position:absolute;
-    z-index: -1;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, 0%);
-}
-
-
-#about-section {
+#name-label,
+#email-label {
     position: absolute;
-    left: 0;
-    bottom: -2000px;
-    transform: translate(0%,0%);
-    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+    color: #fff;
+    transition: top 300ms ease-in, left 300ms ease-in, color 1s;
+}
+
+
+#name:focus ~ #name-label,
+#name:not(:placeholder-shown)#name:not(:focus) ~ #name-label {
+    top: -1.2rem;
+    font-size: 1.2rem;
+    left: 0rem;
+    color: rgb(4, 255, 0) !important;
     background-color:rgb(11,11,10);
 }
 
-#about-section p{
-    line-height: 2rem;
-    word-spacing: 0.2rem;
+#email:focus ~ #email-label,
+#email:not(:placeholder-shown)#email:not(:focus) ~ #email-label{
+    top: -1.2rem;
+    font-size: 1.2rem;
+    left: 0rem;
+    color: rgb(4, 255, 0) !important;
+    background-color:rgb(11,11,10);
 }
 
 
-#footer {
-    margin-top: 10rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    overflow: hidden;
-    padding: 10rem 0 !important;
+textarea{
+    resize: none;
+    height: 415px;
+    font-size: 25px !important;
 }
 
-#footer::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: url(../img/cafe-milan-loc.png);
-    background-position: 50% 45%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    opacity: 0.3;
-}
-
-
-
-@media only screen and (max-device-width: 980px) {
-    #about-info-header-bg::before{
-        background-attachment:scroll;
-        background-position:right center;
-    }
-
-    #about-info-header-bg #about-us-title{
-        position: absolute;
-        top: 50%;
-    }
-
-    #about-section {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        transform: translate(0%,0%);
-        z-index: 1;
-        background-color: black;
-        
-    }
-
-  }
-
-  @media only screen and (max-device-width: 923px) {
-    #about-info-header-bg #about-us-title{
-        position: absolute;
-        top: 45%;
-        
-    }
-
-    #about-section {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        transform: translate(0%,0%);
-        z-index: 1;
-        background-color: black;
-        margin-top: 200px;
-    }
-    
-}
-
-@media only screen and (max-device-width: 300px) {
-    #about-info-header-bg #about-us-title{
-        position: absolute;
-        top: 40%;
-    }
-
-    #about-section{
-        margin-top: 15rem
-    }
-}
