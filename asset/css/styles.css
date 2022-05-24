@@ -372,6 +372,20 @@ background-color: rgba(0, 0, 0, 0.4);
     width: 500px;
 }
 
+/* local */
+
+a[href="https://elfsight.com/all-in-one-chat-widget/?utm_source=websites&utm_medium=clients&utm_content=all-in-one-chat&utm_term=127.0.0.1:5500&utm_campaign=free-widget"]{
+    display: none !important;
+    z-index: -999999;
+}
+
+a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=127.0.0.1:5500&utm_campaign=free-widget"]{
+    display: none !important;
+    z-index: -999999;
+}
+
+/* github */
+
  a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=cirejm07.github.io&utm_campaign=free-widget"]{
     display: none !important;
     z-index: -999999 !important;
