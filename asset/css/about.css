@@ -179,7 +179,7 @@ nav button{
 #about-section {
     position: absolute;
     left: 0;
-    bottom: -70%;
+    bottom: -2000px;
     transform: translate(0%,0%);
     z-index: 1;
     background-color:rgb(11,11,10);
