@@ -39,6 +39,27 @@
     <link rel="stylesheet" href="./asset/css/contact.css" />
   </head>
   <body>
+    <video
+      class="bg-vid"
+      loop
+      muted
+      autoplay
+      poster="img/videoframe.jpg"
+      class="fullscreen-bg__video"
+    >
+      <source
+        src="./asset/vid/Video by cafemilan.bcd_part1_2.mp4"
+        type="video/webm"
+      />
+      <source
+        src="./asset/vid/Video by cafemilan.bcd_part1_2.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="./asset/vid/Video by cafemilan.bcd_part1_2.mp4"
+        type="video/ogg"
+      />
+    </video>
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container pb-1">
         <a class="navbar-brand" href="./index.html"
@@ -116,24 +137,81 @@
       </div>
     </nav>
 
-    <div id="form" class="container-fluid">
-      <div class="row d-flex gy-5">
-        <div class="col-md-5 mx-md-auto">
+    <div id="form" class="container">
+      <div class="row d-flex gy-5 gx-lg-5">
+        <div class="col-lg-6 mx-md-auto order-2 order-lg-1">
+          <div class="mb-5">
+            <p class="fs-1 text-warning fw-semibold">LOCATION:</p>
+            <p class="fs-5 text-light">
+              <strong>Cafe Milan</strong> is located Mandalagan, Bacolod City,
+              front of Camella Subdivision. Crossroads of GM Cordova Ave(Buri
+              Road)
+            </p>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <p>
+                  <i class="fa-solid fa-map-location-dot fs-5 text-warning">
+                    OUR ADRESS</i
+                  >
+                </p>
+                <p class="fs-5 text-light">
+                  MXVG+5X9, GM Cordova Avenue (Buri Road, Bacolod, Negros
+                  Occidental
+                </p>
+              </div>
+              <div class="col-12 col-lg-5 mx-auto">
+                <p>
+                  <i class="fa-solid fa-phone fs-5 text-warning"
+                    >&nbsp; PHONE</i
+                  >
+                </p>
+                <p>
+                  <a href="tel:09957768890" class="fs-5 text-light"
+                    >0995 776 8890</a
+                  >
+                </p>
+                <p>
+                  <i class="fa-solid fa-envelope fs-5 text-warning"
+                    >&nbsp; EMAIL</i
+                  >
+                </p>
+                <p>
+                  <a
+                    href="mailto:cafemilanbcd@gmail.com"
+                    class="fs-5 text-light"
+                    >cafemilanbcd@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
           <iframe
+            class="border border-5 border-warning"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.06731508845616!2d122.97769346665528!3d10.692883159476965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aed1aa96a7c4db%3A0x2aa18adf765e485a!2sCafe%20Milan!5e0!3m2!1sen!2sph!4v1653406093719!5m2!1sen!2sph"
             width="100%"
-            height="750"
+            height="563"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="col-md-5 mx-md-auto">
+        <div class="col-lg-6 mx-md-auto order-1 order-lg-2 mb-2">
+          <div class="mb-5">
+            <p class="text-warning fs-1 fw-semibold">CONTACT US</p>
+            <p class="text-light fs-5">
+              Thank you for reaching out. We'd love to hear from you!
+            </p>
+            <p class="text-light fs-5">
+              Please us the form below to send us a message and we will reply
+              within one business day.
+            </p>
+          </div>
           <form
             id="my-form"
             action="https://formspree.io/f/xgeddolb"
             method="POST"
+            autocomplete="off"
           >
             <div class="mb-5" id="name-container">
               <input
@@ -143,6 +221,7 @@
                 name="name"
                 placeholder=" "
               />
+
               <label id="name-label" for="name" class="text-light fs-4"
                 >Name</label
               >
@@ -161,18 +240,19 @@
               >
             </div>
             <div class="mb-5">
-              <label for="validationTextarea" class="form-label text-light fs-4"
-                >Thank you for reaching out. We'd love to hear from you!</label
-              >
               <textarea
-                class="form-control mb-3"
+                class="form-control mb-3 border border-3 border-warning"
                 id="validationTextarea"
                 placeholder="Send us a message"
                 name="message"
                 required
               ></textarea>
-              <button id="my-form-button" type="submit" class="btn btn-primary">
-                Submit
+              <button
+                id="my-form-button"
+                type="submit"
+                class="btn btn-outline-warning w-25"
+              >
+                SEND
               </button>
               <p id="my-form-status" style="display: none"></p>
             </div>

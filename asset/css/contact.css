@@ -40,6 +40,17 @@ body {
     background-color:rgb(11,11,10);
 }
 
+.bg-vid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+
+
 /* navbar background color */
 .navbar {
     background-color: rgba(13.73, 12.165, 12.55, 0.8) !important;
@@ -159,6 +170,8 @@ nav button{
     border: none;
 }
 
+
+
 #name,
 #email {
     background-color: transparent;
@@ -168,7 +181,7 @@ nav button{
     width: 0%;
     height: 100%;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #FFC107;
     font-size: 25px;
     color: #fff;
     outline: none;
@@ -184,8 +197,7 @@ nav button{
 #email-label {
     position: absolute;
     top: 1rem;
-    left: 1rem;
-    color: #fff;
+    left: 0rem;
     transition: top 300ms ease-in, left 300ms ease-in, color 1s;
 }
 
@@ -195,8 +207,8 @@ nav button{
     top: -1.2rem;
     font-size: 1.2rem;
     left: 0rem;
-    color: rgb(4, 255, 0) !important;
-    background-color:rgb(11,11,10);
+    color: #FFC107 !important;
+    font-weight: bolder;
 }
 
 #email:focus ~ #email-label,
@@ -204,8 +216,8 @@ nav button{
     top: -1.2rem;
     font-size: 1.2rem;
     left: 0rem;
-    color: rgb(4, 255, 0) !important;
-    background-color:rgb(11,11,10);
+    color: #FFC107 !important;
+    font-weight: bolder;
 }
 
 

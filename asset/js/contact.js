@@ -39,7 +39,7 @@ $(document).ready(function(){
                 icon: 'error',
                 title: 'Oops...',
                 text: 'Something went wrong!',
-                footer: '<a href="">Why do I have this issue?</a>'
+                footer: 'There was something wrong in the form. Please email or call us directly.'
               })
             }
           })
@@ -49,7 +49,7 @@ $(document).ready(function(){
             icon: 'error',
             title: 'Oops...',
             text: 'Something went wrong!',
-            footer: '<a href="">Why do I have this issue?</a>'
+            footer: 'There was something wrong in the form. Please email or call us directly.'
           })
       });
     }
