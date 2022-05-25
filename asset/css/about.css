@@ -41,6 +41,18 @@ body {
 
 }
 
+#arrow{
+    position: fixed;
+    bottom: -1%;
+    right: 0%;
+    z-index: 10;
+}
+
+#arrow img{
+    width: 120px;
+    height: 120px;
+}
+
 /* navbar background color */
 .navbar {
     background-color: rgba(13.73, 12.165, 12.55, 0.8) !important;
@@ -258,10 +270,10 @@ nav button{
     
 }
 
-@media only screen and (max-device-width: 300px) {
+@media only screen and (max-device-width: 500px) {
     #about-info-header-bg #about-us-title{
         position: absolute;
-        top: 40%;
+        top: 60%;
     }
 
     #about-section{

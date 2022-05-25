@@ -52,17 +52,6 @@ body {
     height: 120px;
 }
 
-.bg-vid {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-  }
-
-
 /* navbar background color */
 .navbar {
     background-color: rgba(13.73, 12.165, 12.55, 0.8) !important;
@@ -155,7 +144,11 @@ nav button{
     width: 100%;
 }
 
-/* remove the coffee gif when the with is <= 991px */
+
+ul li.active{
+    color: #ffc107;
+}
+
 @media only screen and (max-width: 991px) {
     ul li::before{
         display: none;
@@ -163,79 +156,58 @@ nav button{
   }
 
 
-  #form{
-      width: 100vw;
-      height: 100;
-      position: absolute;
-      top: 15%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-  }
-
-
-
-#name-container,
-#email-container {
-    position: relative;
-    height: 50px;
-    background-color: transparent;
-    border: none;
+.card img{
+    object-fit: contain;
+    height: 350px;
 }
 
+.card{
+    position: relative;
+}
 
+.card::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+}
 
-#name,
-#email {
-    background-color: transparent;
+#search-container {
+    width: 50%;
+    position: relative;
+}
+
+#search-container :where(label, input){
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    border: none;
-    border-bottom: 1px solid #FFC107;
-    font-size: 25px;
-    color: #fff;
-    outline: none;
-    transition: width 300ms ease-in-out;
 }
 
-#name:focus, #name:not(:placeholder-shown),
-#email:focus, #email:not(:placeholder-shown)  {
+#search-container input{
     width: 100%;
+    left: 0;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+    padding-left: 1rem;
 }
 
-#name-label,
-#email-label {
-    position: absolute;
-    top: 1rem;
-    left: 0rem;
-    transition: top 300ms ease-in, left 300ms ease-in, color 1s;
+#search-container label{
+    bottom: 0;
+    border: none;
+    left: 0%;
+    transition: left ease 1s;
+    font-size: 1.8rem;
 }
 
-
-#name:focus ~ #name-label,
-#name:not(:placeholder-shown)#name:not(:focus) ~ #name-label {
-    top: -1.2rem;
-    font-size: 1.2rem;
-    left: 0rem;
+#searchBar:focus ~ #searchLabel,
+#searchBar:not(:placeholder-shown)#searchBar:not(:focus) ~ #searchLabel {
+    bottom: 0;
+    left: -20px;
     color: #FFC107 !important;
     font-weight: bolder;
 }
-
-#email:focus ~ #email-label,
-#email:not(:placeholder-shown)#email:not(:focus) ~ #email-label{
-    top: -1.2rem;
-    font-size: 1.2rem;
-    left: 0rem;
-    color: #FFC107 !important;
-    font-weight: bolder;
-}
-
-
-textarea{
-    resize: none;
-    height: 470px;
-    font-size: 25px !important;
-}
-

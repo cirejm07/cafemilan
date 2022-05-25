@@ -42,6 +42,18 @@ body {
     background-color:rgb(11,11,10);
 }
 
+#arrow{
+    position: fixed;
+    bottom: -1%;
+    right: 0%;
+    z-index: 10;
+}
+
+#arrow img{
+    width: 120px;
+    height: 120px;
+}
+
 /* navbar background color */
 .navbar {
     background-color: rgba(13.73, 12.165, 12.55, 0.8) !important;
