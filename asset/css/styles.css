@@ -186,6 +186,17 @@ nav button{
     width: 15rem;
 }
 
+@media only screen and (max-height: 740px) {
+    #hero-logo img {
+        position: absolute;
+        top: -5%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 999;
+        width: 15rem;
+    }
+  }
+
 /* Passion in a cup */
 #hero-section #hero-intro{
     position: absolute;

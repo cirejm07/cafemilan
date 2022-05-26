@@ -228,7 +228,7 @@ nav button{
 
 
 
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-device-width: 600px) {
     #about-info-header-bg::before{
         background-attachment:scroll;
         background-position:right center;
@@ -236,7 +236,8 @@ nav button{
 
     #about-info-header-bg #about-us-title{
         position: absolute;
-        top: 50%;
+        top: 100%;
+        transform: translate(-50%, 50%);
     }
 
     #about-section {
@@ -254,8 +255,8 @@ nav button{
   @media only screen and (max-device-width: 923px) {
     #about-info-header-bg #about-us-title{
         position: absolute;
-        top: 45%;
-        
+        top: 50%;
+        transform: translate(-50%, 50%);
     }
 
     #about-section {
@@ -273,7 +274,7 @@ nav button{
 @media only screen and (max-device-width: 500px) {
     #about-info-header-bg #about-us-title{
         position: absolute;
-        top: 60%;
+        top: 90%;
     }
 
     #about-section{
