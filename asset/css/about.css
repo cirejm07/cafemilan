@@ -187,6 +187,14 @@ nav button{
     transform: translate(-50%, 0%);
 }
 
+#scroll-down{
+    position: absolute;
+    top: 35rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 200px;
+}
+
 
 #about-section {
     position: absolute;
@@ -252,6 +260,94 @@ nav button{
 
   }
 
+  .developer {
+    position: absolute;
+    bottom: -50%;
+    left: 40%;
+    transform: translate(-40%,0%);
+    width:3.5in;
+}
+
+  .developer img {
+     width: 100%;
+  }
+
+  #know-thy-developer{
+    font-family: 'Sue Ellen Francisco', cursive;
+    position: absolute;
+    left: 80px;
+    bottom: 35%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+
+  .sun{
+      position: absolute;
+      left: -10px;
+      bottom: -40px;
+      z-index: -1;
+      object-fit: contain;
+  }
+
+  @media only screen and (min-device-width: 320px) {
+    .developer {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 75%;
+    }
+
+    #know-thy-developer{
+        left: 20%;
+    }
+  }
+
+
+  @media only screen and (min-device-width: 768px) {
+    .developer {
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+        width: 40%;
+    }
+
+  }
+  @media only screen and (min-device-width: 1024px) {
+    .developer {
+        position: absolute;
+        bottom: 0;
+        left: 33.3%;
+        width: 35%;
+    }
+
+  }
+
+  @media only screen and (min-device-width: 1440px) {
+    .developer {
+        position: absolute;
+        bottom: -50%;
+        left: 36%;
+        width: 25%;
+    }
+
+    #know-thy-developer{
+        left: 15%;
+    }
+  }
+
+  @media only screen and (min-device-width: 1800px) {
+    .developer {
+        position: absolute;
+        bottom: -50%;
+        left: 35%;
+        width: 30%;
+    }
+    #know-thy-developer{
+        left: 35%;
+    }
+  }
+
+
   @media only screen and (max-device-width: 923px) {
     #about-info-header-bg #about-us-title{
         position: absolute;
@@ -271,6 +367,18 @@ nav button{
     
 }
 
+@media only screen and (max-device-height: 600px) {
+    #scroll-down{
+       top: 23rem;
+    }
+}
+
+@media only screen and (max-device-width: 600px) {
+    #scroll-down{
+       display: none;
+    }
+}
+
 @media only screen and (max-device-width: 500px) {
     #about-info-header-bg #about-us-title{
         position: absolute;
@@ -280,4 +388,5 @@ nav button{
     #about-section{
         margin-top: 15rem
     }
+
 }
