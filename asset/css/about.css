@@ -347,6 +347,18 @@ nav button{
     }
   }
 
+  @media only screen and (min-device-width: 2400px) {
+    .developer {
+        position: absolute;
+        bottom: -60%;
+        left: 35%;
+        width: 30%;
+    }
+    #know-thy-developer{
+        left: 35%;
+    }
+  }
+
 
   @media only screen and (max-device-width: 923px) {
     #about-info-header-bg #about-us-title{
