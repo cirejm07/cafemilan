@@ -15,7 +15,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var top = $(this).scrollTop()
         setTimeout(function(){
-                console.log($(this).scrollTop())
+                // console.log($(this).scrollTop())
                 developer.css("transform","translateY(" + -top + "px)");
                 sun.css("transform","rotate(" + top + "deg)")
         }, 100)
