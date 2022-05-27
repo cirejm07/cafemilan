@@ -427,7 +427,7 @@ a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medi
 }
 
 a[href="https://elfsight.com/whatsapp-chat-widget/?utm_source=websites&utm_medium=clients&utm_content=whatsapp-chat&utm_term=cafemilan.vercel.app&utm_campaign=free-widget"] {
-    display: none;
+    display: none !important;
     z-index: -99999 !important
 }
 
