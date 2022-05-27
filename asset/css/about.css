@@ -306,7 +306,7 @@ nav button{
   @media only screen and (min-device-width: 768px) {
     .developer {
         position: absolute;
-        bottom: 0;
+        bottom: -30%;
         left: 28%;
         width: 40%;
     }
@@ -315,7 +315,7 @@ nav button{
   @media only screen and (min-device-width: 1024px) {
     .developer {
         position: absolute;
-        bottom: 0;
+        bottom: -50%;
         left: 33.3%;
         width: 35%;
     }
