@@ -239,7 +239,7 @@ ul li.active{
     #search-container {
         width: 50%;
         position: relative;
-        margin-left: 30%;
+        margin-left: 40%;
     }
 
     #search-container input{
@@ -248,7 +248,7 @@ ul li.active{
         outline: 0;
         background-color: transparent;
         border: none;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: #fff;
         padding-left: 1rem;
     }
@@ -268,13 +268,34 @@ ul li.active{
         position: relative;
         margin-left: 40%;
     }
+
+    #search-container input{
+        width: 100%;
+        left: 5%;
+        outline: 0;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #fff;
+        padding-left: 1rem;
+    }
   }
 
   @media only screen and (max-width: 500px) {
     #search-container {
         width: 50%;
         position: relative;
-        margin-left: 20%;
+        margin-left: 30%;
+    }
+    #search-container input{
+        width: 100%;
+        left: 10%;
+        outline: 0;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #fff;
+        padding-left: 1rem;
     }
   }
 
