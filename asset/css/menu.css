@@ -270,7 +270,7 @@ ul li.active{
     }
   }
 
-  @media only screen and (max-width: 786px) {
+  @media only screen and (max-width: 500px) {
     #search-container {
         width: 50%;
         position: relative;
