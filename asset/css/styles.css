@@ -409,7 +409,7 @@ a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medi
 
 /* github */
 
- a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=cirejm07.github.io&utm_campaign=free-widget"]{
+ a[href="https://elfsight.com/whatsapp-chat-widget/?utm_source=websites&utm_medium=clients&utm_content=whatsapp-chat&utm_term=cirejm07.github.io&utm_campaign=free-widget"]{
     display: none !important;
     z-index: -999999 !important;
 }
@@ -418,6 +418,17 @@ a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medi
 a[href="https://elfsight.com/all-in-one-chat-widget/?utm_source=websites&utm_medium=clients&utm_content=whatsapp-chat&utm_term=cirejm07.github.io&utm_campaign=free-widget"] {
     display: none !important;
     z-index: -99999 !important;
+}
+
+/* vercel */
+a[href="https://elfsight.com/google-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=google-reviews&utm_term=cafemilan.vercel.app&utm_campaign=free-widget"]{
+    display: none !important;
+    z-index: -99999 !important;
+}
+
+a[href="https://elfsight.com/whatsapp-chat-widget/?utm_source=websites&utm_medium=clients&utm_content=whatsapp-chat&utm_term=cafemilan.vercel.app&utm_campaign=free-widget"] {
+    display: none;
+    z-index: -99999 !important
 }
 
 
