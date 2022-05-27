@@ -149,11 +149,14 @@ ul li.active{
     color: #ffc107;
 }
 
+
 @media only screen and (max-width: 991px) {
     ul li::before{
         display: none;
     }
   }
+
+
 
 
 .card img{
@@ -175,6 +178,12 @@ ul li.active{
     background-color: rgba(0,0,0,0.3);
 }
 
+#categorized{
+    position: fixed;
+    margin-left: -100% ;
+    top: 15%;
+ }
+
 #search-container {
     width: 50%;
     position: relative;
@@ -187,7 +196,7 @@ ul li.active{
 
 #search-container input{
     width: 100%;
-    left: 0;
+    left: 2%;
     outline: 0;
     background-color: transparent;
     border: none;
@@ -210,4 +219,78 @@ ul li.active{
     left: -20px;
     color: #FFC107 !important;
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 1400px) {
+    #categorized{
+        position: inherit;
+     }
+
+    #search-container {
+        width: 50%;
+        position: relative;
+        margin-left: 0%;
+    }
+  }
+
+
+  @media only screen and (max-width: 990px) {
+
+    #search-container {
+        width: 50%;
+        position: relative;
+        margin-left: 30%;
+    }
+
+    #search-container input{
+        width: 100%;
+        left: 5%;
+        outline: 0;
+        background-color: transparent;
+        border: none;
+        font-size: 1.8rem;
+        color: #fff;
+        padding-left: 1rem;
+    }
+
+    #search-container label{
+        bottom: 0;
+        border: none;
+        left: -1%;
+        transition: left ease 1s;
+        font-size: 1.8rem;
+    }
+  }
+
+  @media only screen and (max-width: 786px) {
+    #search-container {
+        width: 50%;
+        position: relative;
+        margin-left: 40%;
+    }
+  }
+
+
+#footer {
+    margin-top: 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+#footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(../img/cafe-milan-loc.png);
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3;
 }

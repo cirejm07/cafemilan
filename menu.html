@@ -120,36 +120,38 @@
       </div>
     </nav>
 
-    <div class="container mb-5">
-      <div
+    <div
         class="text-light d-block d-xl-flex container"
         style="margin-top: 200px"
       >
         <ul
-          class="list-unstyled fs-4 h-100 w-100 mb-4 mb-md-0 pb-5 text-center text-lg-start"
+        id="categorized"
+          class="list-unstyled mx-auto fs-4 h-100 w-100 mb-4 mb-md-0 pb-5 text-center text-lg-start d-flex flex-column d-lg-block"
         >
           <li class="list active" data-filter="All">All</li>
           <li class="list" data-filter="coffee">Coffee(Hot | Iced)</li>
           <li class="list" data-filter="noneCoffee">Non Coffee</li>
           <li class="list" data-filter="food">Food</li>
+          <div id="search-container" class="my-5">
+            <input
+              id="searchBar"
+              type="text"
+              name="searchBar"
+              maxlength="20"
+              placeholder="Search..."
+            />
+            <label id="searchLabel" class="text-light" for="searchBar"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></label>
+          </div>
         </ul>
-        <div id="search-container" class="mx-auto my-5 pb-5">
-          <input
-            id="searchBar"
-            type="text"
-            name="searchBar"
-            maxlength="20"
-            placeholder=" "
-          />
-          <label id="searchLabel" class="text-light" for="searchBar"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></label>
-        </div>
       </div>
+
+    <div id="products" class="container my-5">
       <div
         class="product d-flex flex-wrap gap-5 justify-content-center justify-content-lg-center mt-5"
       >
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/cappuccino-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -163,7 +165,7 @@
           </div>
         </div>
 
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/cafe-latte-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -177,7 +179,7 @@
           </div>
         </div>
 
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/americano-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -191,7 +193,7 @@
           </div>
         </div>
 
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/mocha-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -205,7 +207,7 @@
           </div>
         </div>
 
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/white-mocha-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -219,7 +221,7 @@
           </div>
         </div>
 
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/caramel-macchiato-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -233,7 +235,7 @@
           </div>
         </div>
 
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/caramel_-frappe-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -247,7 +249,7 @@
           </div>
         </div>
 
-        <div class="card itemList coffee" style="width: 25rem">
+        <div class="card itemList coffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/Mocha-Frappe-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -261,7 +263,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/cookies-and-cream-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -275,7 +277,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/smores-frappe-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -289,7 +291,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/Java-Chip-Frappe-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -303,7 +305,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/dark-choco-frappe-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -317,7 +319,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/white-choco-frappe-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -331,7 +333,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/vanilla-frappe-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -345,7 +347,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/dark-choco-ice-hot-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -359,7 +361,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/white-choco-hot-cold-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -373,7 +375,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/hot-tea-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -387,7 +389,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/cranberrie-shake-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -401,7 +403,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/orange-juice-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -415,7 +417,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/lemonade-juice-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -429,7 +431,7 @@
           </div>
         </div>
 
-        <div class="card itemList noneCoffee" style="width: 25rem">
+        <div class="card itemList noneCoffee" style="width: 26rem">
           <img
             src="./asset/img/menu-products/bottled-water-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -443,7 +445,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/egg-sandwich-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -457,7 +459,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/tuna-sandwich-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -471,7 +473,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/carbonara-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -485,7 +487,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/pesto-pasta-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -499,7 +501,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/cookies-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -513,7 +515,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/cinnamon-roll-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -527,7 +529,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/brownies-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -543,7 +545,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/cream-puff-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -557,7 +559,7 @@
           </div>
         </div>
 
-        <div class="card itemList food" style="width: 25rem">
+        <div class="card itemList food" style="width: 26rem">
           <img
             src="./asset/img/menu-products/french-fries-removebg-preview.png"
             class="card-img-top img-fluid"
@@ -572,6 +574,62 @@
         </div>
       </div>
     </div>
+
+    <div
+    id="footer"
+    class="fixed-bottom container-fluid p-5 d-flex justify-content-center align-items-center fs-5 text-center text-md-start"
+  >
+    <div class="row container mt-5">
+      <div class="col-md-4">
+        <p class="text-light">
+          Phone:
+          <a href="tel:09957768890" class="text-light">0995 776 8890</a>
+        </p>
+        <p class="text-light">
+          Email:
+          <a href="mailto:cafemilanbcd@gmail.com" class="text-light"
+            >cafemilanbcd@gmail.com</a
+          >
+        </p>
+        <p>
+          <a href="https://www.facebook.com/cafemilan.bcd" target="_blank"
+            ><i class="fa-brands fa-facebook-square fs-2 text-light p-1"></i
+          ></a>
+          <a href="https://www.instagram.com/cafemilan.bcd/" target="_blank"
+            ><i class="fa-brands fa-instagram-square fs-2 text-light px-1"></i
+          ></a>
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <p class="text-light">
+          <a
+            class="text-light"
+            href="https://www.google.com/maps/dir/10.665415,123.0000943/cafe+milan+bacolod/@10.6783415,122.9438858,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33aed1aa96a7c4db:0x2aa18adf765e485a!2m2!1d122.977484!2d10.692907"
+            target="_blank"
+            >Cafe Milan, MXVG+5X9, GM Cordova Avenue (Buri Road, Bacolod,
+            Negros Occidental <i class="fa-solid fa-map-location-dot"></i>
+          </a>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p class="text-light">Open everyday: 8:00AM - 9:00PM</p>
+      </div>
+      <div
+        class="text-light container text-center pt-3 col-12 d-flex justify-content-evenly"
+      >
+        <p>&copy;2021-2022 Cafe Milan - All rights reserved!</p>
+        <p>
+          <a
+            class="text-light fs-5"
+            href="https://cirejm07.github.io/portfolio/"
+            target="_blank"
+            >Developer: Jeric Moreno</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
 
     <!-- script -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
