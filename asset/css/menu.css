@@ -270,6 +270,14 @@ ul li.active{
     }
   }
 
+  @media only screen and (max-width: 786px) {
+    #search-container {
+        width: 50%;
+        position: relative;
+        margin-left: 20%;
+    }
+  }
+
 
 #footer {
     margin-top: 10rem;
