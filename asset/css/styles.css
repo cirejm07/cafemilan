@@ -422,7 +422,7 @@ background-color: rgba(0, 0, 0, 0.4);
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
-      font-family: 'Sue Ellen Francisco', cursive; 
+      font-family: 'Roboto', sans-serif;
       font-size: 5rem;
   }
 
